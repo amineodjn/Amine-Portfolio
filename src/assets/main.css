@@ -1,0 +1,37 @@
+@import './base.css';
+:root {
+  --bg-body:hsl(0, 0%, 8%);
+  --bg-contact: hsl(0, 0%, 14%);
+  --accent: hsl(153, 71%, 59%);
+  --text2: hsl(0, 0%, 85%);
+  --text1: hsl(0, 0%, 100%);
+  --invalid: hsl(7, 100%, 68%);
+  --fs-88: 5.5rem;
+  --fs-72: 4.5rem;
+  --fs-48: 3rem;
+  --fs-40: 2.5rem;
+  --fs-32: 2rem;
+  --fs-24: 1.5rem;
+  --fs-18: 1.125rem;
+  --container: 69.375rem;
+}
+body{
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--bg-body) ;
+  color: var(--text1);
+  font-size: var(--fs-18);
+  line-height: 1.56;
+}
+
+.wrapper{
+  width: calc(100% - 2rem);
+  max-width: var(--container);
+  margin-inline: auto;
+}
+
+@media (min-width:37.5rem){ /*600px*/
+  .wrapper{
+    width: calc(100% - 3.75rem);
+  }
+
+}
