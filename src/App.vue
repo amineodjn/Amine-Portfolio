@@ -6,6 +6,3 @@
 import LandingPage from './components/LandingPage.vue';
 </script>
 
-<style scoped>
-
-</style>
