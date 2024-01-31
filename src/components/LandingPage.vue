@@ -1,5 +1,4 @@
 <template>
-  //HEADER
     <header class="header">
       <h2 class="visually-hidden">Header</h2>
       <div class="wrapper">
@@ -19,7 +18,6 @@
         </nav>
       </div>
     </header>
-    //MAIN
     <main id="main">
       <section class="hero">
             <div class="wrapper hero_wrapper bottom-border">
@@ -27,14 +25,14 @@
                 <picture>
                   <source media="(min-width: 45em)" srcset="../../images/image-profile-desktop.webp">
                   <source media="(min-width: 62.5em)" srcset="../../images/image-profile-tablet.webp">
-                  <img class="hero_image" src="../../images/image-profile-mobile.webp" alt="picture of Amine" width="174" height="383" />
+                  <!-- <img class="hero_image" src="../../images/image-profile-mobile.webp" alt="picture of Amine" width="174" height="383" /> -->
                 </picture>
                 <img class="hero_rings" src="../../images/pattern-rings.svg" alt="" width="530" height="129" />
                 <img class="hero_circle" src="../../images/pattern-circle.svg" alt="" width="129" height="129" />
                 <div class="hero_text">
                   <h1 class="hero_headline">Nice to <br/> meet you! I'm <span>Amin Oudjana</span>.
                   </h1>
-                  <p class="hero_description"> Based in the Poland, I'm a front-end developer passionate about
+                  <p class="hero_description"> Based in Poland, I'm a front-end developer passionate about
                       building accessible web apps that users love.</p>
                   <a href="#contact" class="hero_contact underline">Contact me</a>
                 </div>
@@ -109,35 +107,8 @@
           </div>
         </div>
       </section> 
-      <section id="contact" class="contact bg-less-dark">
-        <div class="wrapper contact_wrapper bottom-border">
-          <div class="contact_text">
-            <h2 class="contact_headline header-xl">Contact</h2>
-            <p class="contact_description">
-              I would love to hear about your project and how i could help.
-              Please fell in the form, and I'll get back to you as soons as possible.
-            </p>
-          </div>
-          <form action="" class="contact_form">
-            <div class="contact_control">
-              <label for="name" class="visually-hidden">Name</label>
-              <input type="text" id="name" name="name" placeholder="Name" required />
-            </div>
-            <div class="contact_control">
-              <label for="email" class="visually-hidden">Email</label>
-              <input type="email" id="email" name="email" placeholder="Email" required />
-            </div>
-            <div class="contact_control">
-              <label for="message" class="visually-hidden">Message</label>
-              <textarea id="message" name="message" cols="30" rows="3" placeholder="Message" required></textarea>
-            </div>
-            <div class="contact_control aling-right">
-              <button type="submit">Send Message</button>
-            </div>
-          </form>
-        </div>
-        <img class="contact_rings" src="../../images/pattern-rings.svg" alt="" width="530" height="129" />
-      </section> 
+      <ContactPage />
+
       <footer class="bg-less-dark">
         <h2 class="visually-hidden">Footer</h2>
       <div class="wrapper">
@@ -160,4 +131,7 @@
     </main>
 
 </template>
+<script setup>
+import ContactPage from './Contact.vue'
+</script>
 

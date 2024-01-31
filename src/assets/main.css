@@ -232,7 +232,7 @@ img, svg {
 
 .hero_circle {
   position: relative;
-  top: 171px;
+  top: 260px;
   margin-bottom: -129px;
   transform: translateX(calc(100vw - 64px - 16px));
 }
@@ -240,7 +240,7 @@ img, svg {
 .hero_text {
   text-align: center;
   position: relative;
-  margin-block-start: 20.94rem;
+  margin-block-start: 5rem;
 }
 
 .hero_headline {
@@ -296,7 +296,7 @@ img, svg {
     position: absolute;
     top: auto;
     right: 0;
-    bottom: 190px;
+    bottom: 160px;
     transform: translateX(50%);
     z-index: 1; 
   }
@@ -371,8 +371,7 @@ img, svg {
   }
   
   .hero_circle {
-    top: 322px;
-    right: 445px;
+    display: none;
   }
 }
 
