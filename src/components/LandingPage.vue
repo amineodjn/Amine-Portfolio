@@ -23,12 +23,12 @@
             <div class="wrapper hero_wrapper bottom-border">
               <div class="hero_content">
                 <picture>
-                  <source media="(min-width: 45em)" srcset="../../images/image-profile-desktop.webp">
-                  <source media="(min-width: 62.5em)" srcset="../../images/image-profile-tablet.webp">
+                  <source media="(min-width: 45em)" src="/images/pattern-rings.svg">
+                  <source media="(min-width: 62.5em)" src="/images/image-profile-tablet.webp">
                   <!-- <img class="hero_image" src="../../images/image-profile-mobile.webp" alt="picture of Amine" width="174" height="383" /> -->
                 </picture>
-                <img class="hero_rings" src="../../images/pattern-rings.svg" alt="" width="530" height="129" />
-                <img class="hero_circle" src="../../images/pattern-circle.svg" alt="" width="129" height="129" />
+                <img class="hero_rings" src="/images/pattern-rings.svg" alt="" width="530" height="129" />
+                <img class="hero_circle" src="/images/pattern-circle.svg" alt="" width="129" height="129" />
                 <div class="hero_text">
                   <h1 class="hero_headline">Nice to <br/> meet you! I'm <span>Amin Oudjana</span>.
                   </h1>
@@ -67,7 +67,7 @@
             <p class="skills_description">1 year of experience</p>
             </div>
           </div>
-          <img class="skills_rings" src="../../images/pattern-rings.svg" alt="" width="530" height="129" />
+          <img class="skills_rings" src="/images/pattern-rings.svg" alt="" width="530" height="129" />
       </section>
       <section class="projects">
         <div class="wrapper projects_wrapper">
@@ -76,8 +76,8 @@
             <a href="#contact" class="projects_contact underline">Contact me</a>
             <div class="projects_item">
                 <picture class="projects_picture">
-                  <source media="(min-width: 62.5em)" src="images/thumbnail-project-1-large.webp">
-                  <img class="projects_image" src="images/thumbnail-project-1-small.webp" alt="screenshot of design portfolio website" width="343" height="253" />
+                  <source media="(min-width: 62.5em)" src="/images/thumbnail-project-1-large.webp">
+                  <img class="projects_image" src="/images/thumbnail-project-1-small.webp" alt="screenshot of design portfolio website" width="343" height="253" />
                 </picture> 
               <h3 class="projects_name">Design Portfolio</h3>
               <p class="projects_tags">
@@ -91,8 +91,8 @@
             </div>
             <div class="projects_item">
                 <picture class="projects_picture">
-                  <source media="(min-width: 62.5em)" srcset="images/thumbnail-project-2-large.webp">
-                  <img class="projects_image" src="images/thumbnail-project-2-small.webp" alt="screenshot of design portfolio website" width="343" height="253" />
+                  <source media="(min-width: 62.5em)" srcset="/images/thumbnail-project-2-large.webp">
+                  <img class="projects_image" src="/images/thumbnail-project-2-small.webp" alt="screenshot of design portfolio website" width="343" height="253" />
                 </picture> 
               <h3 class="projects_name">E-learning landing page</h3>
               <p class="projects_tags">

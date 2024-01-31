@@ -26,7 +26,7 @@
         </div>
       </form>
     </div>
-    <img class="contact_rings" src="../../images/pattern-rings.svg" alt="" width="530" height="129" />
+    <img class="contact_rings" src="/images/pattern-rings.svg" alt="" width="530" height="129" />
   </section> 
 </template>
 <script setup>
