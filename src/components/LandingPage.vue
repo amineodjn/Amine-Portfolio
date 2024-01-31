@@ -76,7 +76,7 @@
             <a href="#contact" class="projects_contact underline">Contact me</a>
             <div class="projects_item">
                 <picture class="projects_picture">
-                  <source media="(min-width: 62.5em)" srcset="images/thumbnail-project-1-large.webp">
+                  <source media="(min-width: 62.5em)" src="images/thumbnail-project-1-large.webp">
                   <img class="projects_image" src="images/thumbnail-project-1-small.webp" alt="screenshot of design portfolio website" width="343" height="253" />
                 </picture> 
               <h3 class="projects_name">Design Portfolio</h3>
