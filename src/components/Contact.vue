@@ -5,7 +5,7 @@
         <h2 class="contact_headline header-xl">Contact</h2>
         <p class="contact_description">
           I would love to hear about your project and how i could help.
-          Please fell in the form, and I'll get back to you as soons as possible.
+          Please fill in the form, and I'll get back to you as soons as possible.
         </p>
       </div>
       <form class="contact_form" @submit.prevent="sendEmail" >

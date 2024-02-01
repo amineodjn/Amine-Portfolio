@@ -3,6 +3,6 @@
 </template>
 
 <script setup>
-import LandingPage from './components/LandingPage.vue';
+import LandingPage from './Views/LandingPage.vue';
 </script>
 

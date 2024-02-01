@@ -1,35 +1,30 @@
 # AminePortfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to AminePortfolio, a personal portfolio project built with Vue 3 and Vite. This project showcases my skills, projects, and contact information in a clean and responsive design.
 
-## Recommended IDE Setup
+## Table of Contents
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Setup](#project-setup)
 
-## Customize configuration
+## Features
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Responsive design for various screen sizes
+- Contact form with email functionality
+- Projects section with links to live projects and source code
+- Skills section highlighting key technologies
+
+## Technologies Used
+
+- Vue 3
+- AWS lambda
 
 ## Project Setup
 
+To get started with the project, clone the repository and install the dependencies:
+
 ```sh
+git clone https://github.com/amineodjn/AminePortfolio.git
+cd AminePortfolio
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
