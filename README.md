@@ -28,3 +28,4 @@ To get started with the project, clone the repository and install the dependenci
 git clone https://github.com/amineodjn/AminePortfolio.git
 cd AminePortfolio
 npm install
+```

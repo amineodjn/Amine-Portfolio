@@ -1,8 +1,7 @@
 <template>
-<LandingPage/>
+  <LandingPage />
 </template>
 
 <script setup>
-import LandingPage from './Views/LandingPage.vue';
+import LandingPage from "./Views/LandingPage.vue";
 </script>
-
