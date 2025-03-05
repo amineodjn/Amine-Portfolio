@@ -26,13 +26,15 @@
           </p>
           <div class="projects_links">
             <a
-              href="https://main.d20xnln01voqtq.amplifyapp.com/"
+              href="https://main.d2udepy2qu8l7r.amplifyapp.com/"
               class="underline"
+              target="_blank"
               >View Project</a
             >
             <a
               href="https://github.com/amineodjn/expense-tracker"
               class="underline"
+              target="_blank"
               >View Code</a
             >
           </div>
@@ -60,11 +62,15 @@
           </p>
           <div class="projects_links">
             <a
-              href="https://staging.d1m061trrx56au.amplifyapp.com/register-user"
+              href="https://staging.d1m061trrx56au.amplifyapp.com"
               class="underline"
+              target="_blank"
               >View Project</a
             >
-            <a href="https://github.com/amineodjn/MultiCoach" class="underline"
+            <a
+              href="https://github.com/amineodjn/MultiCoach"
+              class="underline"
+              target="_blank"
               >View Code</a
             >
           </div>
