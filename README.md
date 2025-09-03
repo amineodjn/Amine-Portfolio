@@ -29,3 +29,21 @@ git clone https://github.com/amineodjn/AminePortfolio.git
 cd AminePortfolio
 npm install
 ```
+
+## Development
+
+```sh
+npm run dev
+```
+
+## Building for Production
+
+```sh
+npm run build
+```
+
+## Deployment
+
+This project is configured for automatic deployment to Firebase Hosting using GitHub Actions.
+
+- **Live Site**: https://amineportfolio.web.app
