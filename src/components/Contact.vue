@@ -84,7 +84,7 @@ const sendEmail = () => {
       alert("Email sent!");
     })
     .catch(err => {
-      alert("Error sending email");
+      alert("Error sending email, " + err);
     });
 };
 </script>

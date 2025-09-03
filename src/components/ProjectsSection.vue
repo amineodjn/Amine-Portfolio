@@ -4,71 +4,38 @@
       <div class="projects_grid">
         <h2 class="projects_headline header-xl">Projects</h2>
         <a href="#contact" class="projects_contact underline">Contact me</a>
-        <div class="projects_item">
+        <div 
+          v-for="project in projects" 
+          :key="project.name"
+          class="projects_item"
+        >
           <picture class="projects_picture">
             <source
               media="(min-width: 62.5em)"
-              src="/images/thumbnail-project-1-large.webp"
+              :src="project.imageLarge"
             />
             <img
               class="projects_image"
-              src="/images/thumbnail-project-1-small.webp"
-              alt="screenshot of Expense Tracker website"
+              :src="project.imageSmall"
+              :alt="project.alt"
               width="343"
               height="253"
             />
           </picture>
-          <h3 class="projects_name">Expense Tracker</h3>
+          <h3 class="projects_name">{{ project.name }}</h3>
           <p class="projects_tags">
-            <span>VueJs</span>
-            <span>CSS</span>
-            <span>echarts</span>
+            <span v-for="tag in project.tags" :key="tag">{{ tag }}</span>
           </p>
           <div class="projects_links">
             <a
-              href="https://main.d2udepy2qu8l7r.amplifyapp.com/"
+              v-if="project.projectUrl"
+              :href="project.projectUrl"
               class="underline"
               target="_blank"
               >View Project</a
             >
             <a
-              href="https://github.com/amineodjn/expense-tracker"
-              class="underline"
-              target="_blank"
-              >View Code</a
-            >
-          </div>
-        </div>
-        <div class="projects_item">
-          <picture class="projects_picture">
-            <source
-              media="(min-width: 62.5em)"
-              srcset="/images/thumbnail-project-2-large.webp"
-            />
-            <img
-              class="projects_image"
-              src="/images/thumbnail-project-2-small.webp"
-              alt="screenshot of design portfolio website"
-              width="343"
-              height="253"
-            />
-          </picture>
-          <h3 class="projects_name">Multicoach</h3>
-          <p class="projects_tags">
-            <span>VueJS</span>
-            <span>Tailwind</span>
-            <span>Firebase</span>
-            <span>AWS</span>
-          </p>
-          <div class="projects_links">
-            <a
-              href="https://staging.d1m061trrx56au.amplifyapp.com"
-              class="underline"
-              target="_blank"
-              >View Project</a
-            >
-            <a
-              href="https://github.com/amineodjn/MultiCoach"
+              :href="project.codeUrl"
               class="underline"
               target="_blank"
               >View Code</a
@@ -79,4 +46,34 @@
     </div>
   </section>
 </template>
-<script setup></script>
+
+<script setup>
+const projects = [
+    {
+    name: 'Multicoach',
+    imageLarge: '/images/thumbnail-project-2-large.webp',
+    imageSmall: '/images/thumbnail-project-2-small.webp',
+    alt: 'screenshot of design portfolio website',
+    tags: ['VueJS', 'Tailwind', 'Firebase', 'AWS'],
+    projectUrl: 'https://multicoach-4a815.web.app/',
+    codeUrl: 'https://github.com/amineodjn/MultiCoach'
+  },
+  {
+    name: 'Expense Tracker',
+    imageLarge: '/images/thumbnail-project-1-large.webp',
+    imageSmall: '/images/thumbnail-project-1-small.webp',
+    alt: 'screenshot of Expense Tracker website',
+    tags: ['VueJs', 'CSS', 'echarts'],
+    projectUrl: 'https://main.d2udepy2qu8l7r.amplifyapp.com/',
+    codeUrl: 'https://github.com/amineodjn/expense-tracker'
+  },
+  {
+    name: 'DevOps',
+    imageLarge: '/images/thumbnail-project-1-large.webp',
+    imageSmall: '/images/thumbnail-project-1-small.webp',
+    alt: 'screenshot of Expense Tracker website',
+    tags: ['AWS', 'K8s', 'Terraform'],
+    codeUrl: 'https://github.com/amineodjn/DevOps'
+  },
+]
+</script>
