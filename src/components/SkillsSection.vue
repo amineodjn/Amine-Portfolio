@@ -2,32 +2,12 @@
   <section class="skills">
     <div class="wrapper skills_wrapper bottom-border">
       <h2 class="visually-hidden">Skills</h2>
-      <div class="skills_item">
-        <h3 class="skills_title">VueJs</h3>
-      </div>
-      <div class="skills_item">
-        <h3 class="skills_title">Typescript</h3>
-      </div>
-      <div class="skills_item">
-        <h3 class="skills_title">Tailwind CSS</h3>
-      </div>
-      <div class="skills_item">
-        <h3 class="skills_title">AWS</h3>
-      </div>
-      <div class="skills_item">
-        <h3 class="skills_title">Firebase</h3>
-      </div>
-      <div class="skills_item">
-        <h3 class="skills_title">GraphQL</h3>
-      </div>
-      <div class="skills_item">
-        <h3 class="skills_title">Vitest</h3>
-      </div>
-      <div class="skills_item">
-        <h3 class="skills_title">Jest</h3>
-      </div>
-      <div class="skills_item">
-        <h3 class="skills_title">i18n</h3>
+      <div 
+        v-for="skill in skills" 
+        :key="skill"
+        class="skills_item"
+      >
+        <h3 class="skills_title">{{ skill }}</h3>
       </div>
     </div>
     <img
@@ -39,4 +19,17 @@
     />
   </section>
 </template>
-<script setup></script>
+
+<script setup>
+const skills = [
+  'VueJs',
+  'Tailwind CSS',
+  'Typescript',
+  'Vitest',
+  'Jest',
+  'i18n',
+  'AWS Services',
+  'Firebase',
+  'DevOps Basics'
+]
+</script>

@@ -30,8 +30,7 @@
             meet you! I'm <span>Amin Oudjana</span>.
           </h1>
           <p class="hero_description">
-            Based in Poland, I'm a front-end developer passionate about building
-            accessible web apps that users love.
+            Self-Taught Frontend Developer with hands-on experience in modern SaaS platform. Demonstrated growth through diverse projects and continuous learning. Passionate about building scalable applications and delivering engaging user experiences.
           </p>
           <a href="#contact" class="hero_contact underline">Contact me</a>
         </div>
