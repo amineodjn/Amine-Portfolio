@@ -6,7 +6,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test:unit": "vitest"
+    "test:unit": "vitest",
+    "deploy": "npm run build && firebase deploy",
+    "deploy:hosting": "firebase deploy --only hosting"
   },
   "dependencies": {
     "vue": "^3.3.4"
