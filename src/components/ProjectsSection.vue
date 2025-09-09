@@ -5,7 +5,7 @@
         <h2 class="projects_headline header-xl">Projects</h2>
         <a href="#contact" class="projects_contact underline">Contact me</a>
         <div 
-          v-for="project in projects" 
+          v-for="project in PROJECTS" 
           :key="project.name"
           class="projects_item"
         >
@@ -48,11 +48,20 @@
 </template>
 
 <script setup>
-const projects = [
+const PROJECTS = [
+    {
+      name: 'Web pos system',
+      imageLarge: '/images/thumbnail-project-1-large.webp',
+      imageSmall: '/images/thumbnail-project-1-small.webp',
+      alt: 'screenshot of design portfolio website',
+      tags: ['VueJS', 'Typescript', 'Tailwind', 'Firebase'],
+      projectUrl: 'https://web-pos-demo.web.app/admin/dashboard',
+      codeUrl: 'https://github.com/amineodjn/web-pos-frontend'
+    },
     {
     name: 'Multicoach',
-    imageLarge: '/images/thumbnail-project-2-large.webp',
-    imageSmall: '/images/thumbnail-project-2-small.webp',
+    imageLarge: '/images/thumbnail-project-1-large.webp',
+    imageSmall: '/images/thumbnail-project-1-small.webp',
     alt: 'screenshot of design portfolio website',
     tags: ['VueJS', 'Tailwind', 'Firebase', 'AWS'],
     projectUrl: 'https://multicoach-4a815.web.app/',
@@ -60,8 +69,8 @@ const projects = [
   },
   {
     name: 'Expense Tracker',
-    imageLarge: '/images/thumbnail-project-1-large.webp',
-    imageSmall: '/images/thumbnail-project-1-small.webp',
+    imageLarge: '/images/thumbnail-project-2-large.webp',
+    imageSmall: '/images/thumbnail-project-2-small.webp',
     alt: 'screenshot of Expense Tracker website',
     tags: ['VueJs', 'CSS', 'echarts'],
     projectUrl: 'https://main.d2udepy2qu8l7r.amplifyapp.com/',
@@ -69,8 +78,8 @@ const projects = [
   },
   {
     name: 'DevOps',
-    imageLarge: '/images/thumbnail-project-1-large.webp',
-    imageSmall: '/images/thumbnail-project-1-small.webp',
+    imageLarge: '/images/thumbnail-project-2-large.webp',
+    imageSmall: '/images/thumbnail-project-2-small.webp',
     alt: 'screenshot of Expense Tracker website',
     tags: ['AWS', 'K8s', 'Terraform'],
     codeUrl: 'https://github.com/amineodjn/DevOps'
